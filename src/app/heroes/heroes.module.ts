@@ -1,4 +1,4 @@
-import { NgClass } from "@angular/common";
+import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
 import { HeroComponent } from "./components/hero/hero.component";
 import { ListComponent } from "./components/list/list.component";
@@ -18,8 +18,10 @@ import { ListComponent } from "./components/list/list.component";
    HeroComponent,
    ListComponent
 
+  ],
+  imports: [
+    CommonModule
   ]
-
 
 })
 export class heroesModule {}
